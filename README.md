@@ -1,10 +1,23 @@
-# Your Project's Name
+# Portfolio Project 1 - HTML/CSS Essentials
+## Table of Contents
+- [Objective](#Objective)
+- [Brief](#Brief)
+- [UX &#8722; User Experience Design](#UX-&#8722;-User-Experience-Design)
+## Objective
+In this project I intend to provide a portfolio style website for my sister's wildlife photography.  The main objective is to demonstrate competency in HTML and CSS.  I hope to provide an emotive, static front end application which is easy to navigate and has a clear purpose.
+***
+## Brief
+### **Katie Horrocks - Wildlife Photography**
+<!-- link to site here -->
+The goal of this website is to promote Katie Horrocks' photography.  The client would like to have:
+- a brief introduction, who she is and what she does
+- the client intends to display a few small galleries
+- a contact form
+- links to her social media sites
 
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
- 
-## UX
+*She may, at a later date, add a blog to the site so that element should be considered during the design of the application*
+***
+## UX &#8722; User Experience Design
  
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
