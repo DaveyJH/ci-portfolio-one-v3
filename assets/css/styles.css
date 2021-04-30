@@ -18,6 +18,8 @@ body {
     font-family: "Work Sans", sans-serif;
     background-color: #F6F3F6;
 }
+
+/* header */
 header {
     height: 8rem;
     background-color: #E3A2A0;
@@ -54,6 +56,7 @@ h2 {
     border-radius: 2rem;
     flex-shrink: 0;
 }
+/* nav menus */
 nav {
     width: 5rem;
     float: left;
@@ -126,3 +129,40 @@ nav a:hover, #main-menu>i {
 #main-menu ul li {
     padding: 1rem 0;
 }
+/* end of header */
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 6rem;
+    background-color: #E3A2A0;
+    padding: 0 8rem;
+    width: 100%;
+}
+footer ul {
+    list-style-type: none;
+    height: 6rem;
+    width: 20rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3rem;
+    color: #73937E;
+}
+footer ul a:hover {
+    color: #49736B;
+}
+
+footer div {
+    font-variant: small-caps;
+    color: #D2C1D6;
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    line-height: 2rem;;
+}
+/* end of footer */
