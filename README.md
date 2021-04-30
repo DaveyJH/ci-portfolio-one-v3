@@ -6,6 +6,7 @@
 - [Initial Concept](#Initial-Concept)
     - [Wireframes](#Wireframes)
         - [All Wireframes - Separate Document](./wireframes.md)
+    - [Colour Scheme](#Colours)
 ***
 ## Objective
 In this project I intend to provide a portfolio style website for my sister's wildlife photography.  The main objective is to demonstrate competency in HTML and CSS.  I hope to provide an emotive, static front end application which is easy to navigate and has a clear purpose.
@@ -36,6 +37,9 @@ With photographic images featuring as a really important aspect of the site, I  
 ##### Home Page
 ![Home Page Wireframe](./assets/images/readme-content/mob-home.png)
 
+#### Colours
+A neutral color scheme created using [coolors.co](https://coolors.co)
+![Colour Scheme](./assets/images/readme-content/scheme-a.png)
 
 ## Features
 
