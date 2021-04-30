@@ -40,6 +40,7 @@ With photographic images featuring as a really important aspect of the site, I  
 #### Colours
 A neutral color scheme created using [coolors.co](https://coolors.co)
 ![Colour Scheme](./assets/images/readme-content/scheme-a.png)
+![Colours Applied](./assets/images/readme-content/mob-col-1.png)
 
 ## Features
 
