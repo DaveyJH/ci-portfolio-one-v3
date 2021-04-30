@@ -1,0 +1,74 @@
+/* google fonts !"Dancing Script" + "Caveat" = 400-700weight no italics  */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Work+Sans&display=swap');
+
+html {
+    font-size: 62.25%;
+}
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+header {
+    height: 8rem;
+    background-color: #E3A2A0;
+    color: #DB8784;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#title-holder {
+    margin: 0 auto;
+    font-family: "Caveat", cursive, sans-serif;
+}
+h1 {
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    color: #B05162;
+}
+h2 {
+    font-family: "Dancing Script", Trebuchet MS, cursive, sans-serif;
+    letter-spacing: 0.26rem;
+    color: #49736B;
+}
+#header-image {
+    height: 5rem;
+    width: 5rem;
+    background: url(../images/hamster.jpg) no-repeat center center;
+    background-size: 250%;
+    float: right;
+    border: 0.5rem solid #DB8784;
+    border-radius: 2rem;
+    flex-shrink: 0;
+}
+nav {
+    width: 5rem;
+    float: left;
+    padding-top: 0.5rem;
+}
+nav li {
+    list-style: none;
+}
+nav li:hover {
+    cursor: pointer;
+}
+#main-menu {
+    position: relative;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+/* hide menu items */
+#main-menu ul, #main-menu ul * {
+    visibility: hidden;
+    display: none;
+}
