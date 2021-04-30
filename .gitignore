@@ -1,0 +1,17 @@
+ stop balsamiq files
+*.bmpr
+
+# ignore Mac system files
+.DS_Store
+
+# added from template
+core.Microsoft*
+core.mongo*
+core.python*
+env.py
+__pycache__/
+*.py[cod]
+node_modules/
+
+# ignore WIP folder
+WIP/
