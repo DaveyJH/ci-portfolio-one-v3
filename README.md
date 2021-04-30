@@ -3,6 +3,10 @@
 - [Objective](#Objective)
 - [Brief](#Brief)
 - [UX &#8722; User Experience Design](#UX-&#8722;-User-Experience-Design)
+- [Initial Concept](#Initial-Concept)
+    - [Wireframes](#Wireframes)
+        - [All Wireframes - Separate Document](./wireframes.md)
+***
 ## Objective
 In this project I intend to provide a portfolio style website for my sister's wildlife photography.  The main objective is to demonstrate competency in HTML and CSS.  I hope to provide an emotive, static front end application which is easy to navigate and has a clear purpose.
 ***
@@ -18,13 +22,20 @@ The goal of this website is to promote Katie Horrocks' photography.  The client 
 *She may, at a later date, add a blog to the site so that element should be considered during the design of the application*
 ***
 ## UX &#8722; User Experience Design
+### User Requirements
+Some example user stories which will effect the design
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+- *"As a first time visitor, I want to know what this site is about. I may use a number of different devices (mobile/tablet etc.) to view the site. I would like to be able to navigate easily"*
+- *"As a returning visitor, I want to take a look at some different galleries and possibly some social media links. I am interested in learning a little more about Katie, but I really do like the photographs"*
+- *"As a potential client, I would like to see some of Katie's work. I care about presentation and the overall design may impact my decisions. I want to be able to send my enquiries directly to Katie"*
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+### Initial Concept
+With photographic images featuring as a really important aspect of the site, I  hope to keep the design fairly free from other distractions. I anticipate using a fairly neutral colour scheme as I feel this will allow the content images to stand out more from the design aspects. The application is to be designed with 'mobile first' in mind.
+#### Wireframes
+*See [here](./wireframes.md#Wireframes) for other device types*
+##### Home Page
+![Home Page Wireframe](./assets/images/readme-content/mob-home.png)
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
 ## Features
 
