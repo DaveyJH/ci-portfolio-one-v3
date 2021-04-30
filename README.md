@@ -5,7 +5,7 @@
 - [UX &#8722; User Experience Design](#UX-&#8722;-User-Experience-Design)
 - [Initial Concept](#Initial-Concept)
     - [Wireframes](#Wireframes)
-        - [All Wireframes - Separate Document](./wireframes.md)
+        - [All Wireframes - Separate Document](/wireframes.md)
     - [Colour Scheme](#Colour-Scheme)
 - [Features](#Features)
     - [Existing Features](#Existing-Features)
@@ -44,14 +44,14 @@ Some example user stories which will effect the design
 ### Initial Concept
 With photographic images featuring as a really important aspect of the site, I  hope to keep the design fairly free from other distractions. I anticipate using a fairly neutral colour scheme as I feel this will allow the content images to stand out more from the design aspects. The application is to be designed with 'mobile first' in mind.
 #### Wireframes
-*See [here](./wireframes.md#Wireframes) for other device types*
+*See [here](/wireframes.md#Wireframes) for other device types*
 ##### Home Page
-![Home Page Wireframe](./assets/images/readme-content/mob-home.png)
+![Home Page Wireframe](/assets/images/readme-content/mob-home.png)
 
 #### Colour Scheme
 A neutral color scheme created using [coolors.co](https://coolors.co)
-![Colour Scheme](./assets/images/readme-content/scheme-a.png)
-![Colours Applied](./assets/images/readme-content/mob-col-1.png)
+![Colour Scheme](/assets/images/readme-content/scheme-a.png)
+![Colours Applied](/assets/images/readme-content/mob-col-1.png)
 
 ## Features
 

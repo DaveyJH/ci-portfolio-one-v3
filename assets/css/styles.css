@@ -49,7 +49,7 @@ h2 {
 #header-image {
     height: 5rem;
     width: 5rem;
-    background: url(../images/hamster.jpg) no-repeat center center;
+    background: url(/assets/images/hamster.jpg) no-repeat center center;
     background-size: 250%;
     float: right;
     border: 0.5rem solid #DB8784;
@@ -134,7 +134,7 @@ nav a:hover, #main-menu>i {
 /* main section of home page */
 #hero-image {
     background-color: #D2C1C6;
-    background: url(../images/leopard.jpg) no-repeat center center;
+    background: url(/assets/images/leopard.jpg) no-repeat center center;
     background-size: 100%;
     height: 36rem;
     margin-top: 6rem;
