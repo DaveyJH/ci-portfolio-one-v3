@@ -16,7 +16,7 @@ a {
 }
 body {
     font-family: "Work Sans", sans-serif;
-    background-color: #F6F3F6;
+    background-color: #E4DAE7;
 }
 
 /* header */
@@ -61,7 +61,7 @@ nav {
     width: 5rem;
     float: left;
     padding-top: 0.5rem;
-    font-family: "Indie Flower";
+    font-family: "Indie Flower", cursive, sans-serif;
     color: #DB8784;
 }
 nav li {
@@ -131,6 +131,41 @@ nav a:hover, #main-menu>i {
 }
 /* end of header */
 
+/* main section of home page */
+#hero-image {
+    background-color: #D2C1C6;
+    background: url(../images/leopard.jpg) no-repeat center center;
+    background-size: 100%;
+    height: 36rem;
+    margin-top: 6rem;
+}
+#hero-text-container {
+    background-color:#58556388;
+    font-size: 4rem;
+    text-align: center;
+    width: 30rem;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -10rem;
+    border-radius: 0.8rem;
+    color: #421E25;
+    text-shadow: 0.2rem 0.2rem 0.3rem #D2C1C6, -0.2rem -0.2rem 0.3rem #D2C1C6;
+}
+#hero-text-container p:first-of-type {
+    font-family: "caveat", cursive, sans-serif;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+#hero-text-container p:last-of-type {
+    font-family: "Dancing Script", Trebuchet MS, cursive, sans-serif;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    padding-bottom: 0.8rem;
+    /* color: #49736B; */
+    color: #6E333D;
+    font-weight: 600;
+}
+
 /* footer */
 footer {
     position: fixed;
@@ -162,7 +197,7 @@ footer div {
     color: #D2C1D6;
     position: absolute;
     bottom: 0;
-    right: 2rem;
+    right: 1rem;
     line-height: 2rem;;
 }
 /* end of footer */
