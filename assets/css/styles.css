@@ -82,8 +82,24 @@ nav a:hover, #main-menu>i {
     visibility: visible;
     display: block;
 }
+/* allows 'tabbing' through content */
+#main-menu:focus-within *:not(#sub-menu){
+    visibility: visible;
+    display: block;
+}
+/* apply shadow to hovered item */
+#main-menu ul a>li:hover, #galleries:hover {
+    text-shadow: 0.2rem 0.2rem 0.3rem #B05162;
+}
+#galleries:hover li {
+    text-shadow: none;
+}
 /* nav sub menu appears when hovered */
-#galleries:hover * {
+#galleries:hover ul {
+    visibility: visible;
+    display: block;
+}
+#galleries:focus-within * {
     visibility: visible;
     display: block;
 }
