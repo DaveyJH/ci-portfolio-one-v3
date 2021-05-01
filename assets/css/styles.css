@@ -136,10 +136,8 @@ nav a:hover, #main-menu>i {
     background-color: #D2C1C6;
     background: url(../images/leopard.jpg) no-repeat center center;
     background-size: cover;
-    /* height: 36rem; */
     height: max(59vh, 36rem);
-    margin-top: 6rem;
-    animation: animal-change 9s alternate 20;
+    top: 6rem;
     position: relative;
     z-index: -2;
 }
@@ -147,11 +145,10 @@ nav a:hover, #main-menu>i {
     background-color:#D2C1D688;
     font-size: 4rem;
     text-align: center;
-    /* width: 30rem; */
     width: 85%;
     margin: 0 auto;
     position: relative;
-    margin-top: -10rem;
+    top: -10rem;
     border-radius: 0.8rem;
     color: #9B4655;
     text-shadow: 0.2rem 0.2rem 0.3rem #D2C1C6, -0.2rem -0.2rem 0.3rem #D2C1C6;
@@ -178,7 +175,7 @@ footer {
     bottom: 0;
     height: 6rem;
     background-color: #E3A2A0;
-    padding: 0 9.5rem;
+    padding: 0 25%;
     width: 100%;
 }
 footer ul {
@@ -213,13 +210,19 @@ footer div {
     #title-container h2 {
         position: absolute;
         top: 10rem;
-        width: 18rem;
-        left: calc(50% - 9rem);
-        word-wrap: nowrap;
+        width: 80%;
+        left: 10%;
         z-index: -1;
+        white-space: nowrap;
+        /* workaround - see bug list in README.md */
+        opacity: 0.75;
+        background-color: #E4DAE7;
+        border-radius: 0.8rem;
     }
     #header-image {
-        flex-shrink: 1;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 1.6rem;;
     }
     #main-menu>i {
         font-size: 3rem;
@@ -228,23 +231,11 @@ footer div {
     #sub-menu {
         left: 1.5rem;
     }
-    #hero-image {
-        margin-top: max(calc(24vh - 9rem), 6rem);
-    }
-    #hero-text-container {
-        top: -9rem;
-    }
-
 }
 /* landscape */
 @media screen and (orientation: landscape) {
     html {
         font-size: 50%;
-    }
-    #title-container {
-        width: 100%;
-        font-size: larger;
-        padding: 0 3rem;
     }
     #title-container a {
         display: flex;
@@ -252,56 +243,52 @@ footer div {
         flex-grow: 1;
         justify-content: space-evenly;
     }
+    #title-container {
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 0 3rem;
+    }
     #title-container h1 {
         margin-right: 3rem;
     }
-    main {
+    /* flexbox for content */
+    main>div {
+        margin-top: 3rem;
         display: flex;
-        margin-top: -2rem;
+        flex-direction: row-reverse;
+        height: calc(100vh - 14rem);
+        align-content: center;
     }
-    main>* {
+    main>div>* {
         box-shadow: 0 0 0.3rem #585563;
-        }
+    }
     #hero-image {
         width: 60%;
-        height: max(57.5vh, 21.5rem);
-        order: 2;
+        height: 100%;
+        top: 0;
         border-top-left-radius: 1rem;
-        border-bottom-left-radius: 1rem;
     }
     #hero-text-container {
         width: 30%;
-        margin-top: 9rem;
-        margin-bottom: 4rem;
         padding: 2.2rem;
         font-size: 3.3rem;
-    }
-    #hero-text-container p:first-of-type {
-        margin-bottom: 1rem;
-    }
-    #hero-text-container p:last-of-type {
-        font-size: 2.3rem;
-    }
+        top: 0;
+        max-height: 86%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    } 
     footer, footer ul {
         height: 4rem;
     }
 }
-@media screen and (orientation: landscape) 
-and (max-height: 359px) {
-    #hero-text-container {
-        margin-top: 7rem;
-        padding: 1rem;
-    }
-    #hero-image {
-        margin-top: 5rem;
-    }
-}
 @media screen and (orientation: landscape)
-and (max-height: 281px) {
-    #hero-text-container, #hero-image {
-        margin-top: 4rem;
-    }
-    #hero-image {
-        border-bottom-left-radius: 0;
+and (max-height: 295px) {
+    footer, footer ul {
+        z-index: -1;
     }
 }
+        /*heroimage height: max(57.5vh, 21.5rem); */
+
+        /*herotextcont margin-top: 9rem; */
+

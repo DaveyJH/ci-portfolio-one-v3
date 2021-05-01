@@ -12,6 +12,7 @@
     - [Features Left to Implement](#Features-Left-to-Implement)
 - [Technologies Used](#Technologies-Used)
 - [Testing](#Testing)
+    - [Bugs](#Bugs)
 - [Deployment](#Deployment)
 - [Credits](#Credits)
     - [Content](#Content)
@@ -114,6 +115,16 @@ You should also mention in this section any interesting bugs or problems you dis
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
+### Bugs
+1. The h2 element, "wildlife photography" is visible over the "main-hero" div. This appears to only present a problem with small phones screens such as the iphone 4.  I have added a background colour with some opacity as a simple work-around for now.  I do not feel the bug will effect a large audience and is of a minor nature
+
+*style.css line - 219*
+
+    opacity: 0.75;
+    background-color: #E4DAE7;
+    border-radius: 0.8rem;
+
+*I believe I could move the h2 element into the main section, rather than the header. This would allow it to flow with the content, but will require some repositioning of items*
 ## Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
