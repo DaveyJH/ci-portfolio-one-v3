@@ -236,10 +236,16 @@ footer div {
         top: -9rem;
     }
 }
-/* landscape */
-@media screen and (orientation: landscape) {
-    html {
-        font-size: 50%;
+/* tablets - portrait */
+@media screen and (min-width: 640px)
+and (orientation: portrait) {
+    header {
+        height: 12rem;
+    }
+    #title-container {
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 0 3rem;
     }
     #title-container a {
         display: flex;
@@ -247,10 +253,42 @@ footer div {
         flex-grow: 1;
         justify-content: space-evenly;
     }
+    #title-container h1 {
+        margin-right: 3rem;
+        white-space: nowrap;
+    }
+    #hero-image {
+        top: 10vh;
+    }
+    #hero-text-container {
+        width: 66%;
+    }
+    footer, footer ul {
+        height: 8.5rem;
+    }
+    footer ul {
+        font-size: 4rem;
+    }
+    footer div {
+        bottom: 1rem;
+        font-size: 1.6rem;
+    }
+}
+/* landscape */
+@media screen and (orientation: landscape) {
+    html {
+        font-size: 50%;
+    }
     #title-container {
         width: 100%;
         font-size: 1.3rem;
         padding: 0 3rem;
+    }
+    #title-container a {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: space-evenly;
     }
     #title-container h1 {
         margin-right: 3rem;
@@ -292,7 +330,4 @@ and (max-height: 295px) {
         z-index: -1;
     }
 }
-        /*heroimage height: max(57.5vh, 21.5rem); */
-
-        /*herotextcont margin-top: 9rem; */
 
