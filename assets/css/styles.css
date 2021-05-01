@@ -136,7 +136,8 @@ nav a:hover, #main-menu>i {
     background-color: #D2C1C6;
     background: url(../images/leopard.jpg) no-repeat center center;
     background-size: cover;
-    height: max(59vh, 36rem);
+    /* height: max(59vh, 36rem); */
+    height: max(calc(71vh - 7rem), 36rem);
     top: 6rem;
     position: relative;
     z-index: -2;
@@ -230,6 +231,9 @@ footer div {
     }
     #sub-menu {
         left: 1.5rem;
+    }
+    #hero-text-container {
+        top: -9rem;
     }
 }
 /* landscape */
