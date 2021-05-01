@@ -1,0 +1,56 @@
+/* having discussed how to approach media queries with some other students on slack, I have decided to be less specific with the media queries but have left this file as a WIP if I ever wish to return.  The changes to succeed this change may cuase the queries to no longer be useable */
+/* media queries */
+/* galax fold */
+@media only screen 
+  and (max-device-width: 339px)
+  and (orientation: portrait) {
+    #hero-text-container {
+        margin-top: -10rem;
+        width: 80%;
+    }
+    #title-container h2 {
+        position: absolute;
+        top: 10rem;
+        left: calc(50% - 8.133rem)
+    }
+    #sub-menu {
+        left: 2rem;
+    }
+    footer {
+        padding: 0 5rem;
+    }
+}
+/* iphone 4/4s portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (max-device-height: 567px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    #hero-image {
+        margin-top: 3.5rem;
+    }
+    #hero-text-container {
+        margin-top: -20rem;
+    }
+    footer {
+        padding: 0 6.5rem;
+    }
+}
+/* iphone 5/5s */
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (device-height: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    #hero-image {
+        margin-top: 3.5rem;
+    }
+    #hero-text-container {
+        margin-top: -11rem;
+    }
+    footer {
+        padding: 0 6.5rem;
+    }
+}
