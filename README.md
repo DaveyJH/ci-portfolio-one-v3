@@ -68,6 +68,15 @@ In this section, you should go over the different parts of your project, and des
 >*"As a first time visitor...**I want to know what this site is about**"*
 - *the tag line under the name gives an immediate indication to what the site is connected to, the small image is relevant and emotive*
 
+3. The home page has a large image showing animal photography
+>*"As a first time visitor...**I want to know what this site is about**"*
+>*"As a returning visitor...**I really do like the photographs**"*
+- *the hero image shows of the sort of photography included in the website*
+
+4. The footer element has accessible icons which link to social media platforms
+>*"As a returning visitor...**some social media links**"*
+- *the social media links will be available on all pages*
+
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
