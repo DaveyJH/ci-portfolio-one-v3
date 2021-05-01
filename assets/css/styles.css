@@ -138,7 +138,6 @@ nav a:hover, #main-menu>i {
     background-size: cover;
     /* height: 36rem; */
     height: max(59vh, 36rem);
-
     margin-top: 6rem;
     animation: animal-change 9s alternate 20;
     position: relative;
@@ -237,6 +236,7 @@ footer div {
     }
 
 }
+/* landscape */
 @media screen and (orientation: landscape) {
     html {
         font-size: 50%;
@@ -284,5 +284,24 @@ footer div {
     }
     footer, footer ul {
         height: 4rem;
+    }
+}
+@media screen and (orientation: landscape) 
+and (max-height: 359px) {
+    #hero-text-container {
+        margin-top: 7rem;
+        padding: 1rem;
+    }
+    #hero-image {
+        margin-top: 5rem;
+    }
+}
+@media screen and (orientation: landscape)
+and (max-height: 281px) {
+    #hero-text-container, #hero-image {
+        margin-top: 4rem;
+    }
+    #hero-image {
+        border-bottom-left-radius: 0;
     }
 }
