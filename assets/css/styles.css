@@ -37,13 +37,13 @@ header {
 h1 {
     text-transform: capitalize;
     text-decoration: underline;
-    font-size: 2.5rem;
-    letter-spacing: 0.15rem;
+    font-size: 2.5em;
+    letter-spacing: 0.15em;
     color: #B05162;
 }
 h2 {
     font-family: "Dancing Script", Trebuchet MS, cursive, sans-serif;
-    letter-spacing: 0.26rem;
+    letter-spacing: 0.26em;
     color: #49736B;
 }
 #header-image {
@@ -168,7 +168,6 @@ nav a:hover, #main-menu>i {
     text-transform: capitalize;
     font-size: 2.5rem;
     padding-bottom: 0.8rem;
-    /* color: #49736B; */
     color: #6E333D;
     font-weight: 600;
 }
@@ -242,6 +241,20 @@ footer div {
     html {
         font-size: 50%;
     }
+    #title-container {
+        width: 100%;
+        font-size: larger;
+        padding: 0 3rem;
+    }
+    #title-container a {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: space-evenly;
+    }
+    #title-container h1 {
+        margin-right: 3rem;
+    }
     main {
         display: flex;
         margin-top: -2rem;
@@ -249,7 +262,6 @@ footer div {
     main>* {
         box-shadow: 0 0 0.3rem #585563;
         }
-    }
     #hero-image {
         width: 60%;
         height: max(57.5vh, 21.5rem);
@@ -269,5 +281,8 @@ footer div {
     }
     #hero-text-container p:last-of-type {
         font-size: 2.3rem;
+    }
+    footer, footer ul {
+        height: 4rem;
     }
 }
