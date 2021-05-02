@@ -70,6 +70,9 @@ nav li {
 nav a:hover, #main-menu>i {
     cursor: pointer;
 }
+nav>ul {
+    height: 4rem;
+}
 #main-menu {
     position: relative;
     font-size: 4rem;
@@ -81,18 +84,24 @@ nav a:hover, #main-menu>i {
     display: none;
 }
 /* nav main-menu appears when burger/menu item hovered */
-#main-menu:hover *:not(#sub-menu){
+nav>ul>li:hover *:not(#sub-menu) {
     visibility: visible;
     display: block;
 }
 /* allows 'tabbing' through content */
-#main-menu:focus-within *:not(#sub-menu){
+nav>ul>li:focus-within *:not(#sub-menu) {
     visibility: visible;
     display: block;
 }
 /* apply shadow to hovered item */
 #main-menu ul a>li:hover, #galleries:hover {
     text-shadow: 0.2rem 0.2rem 0.3rem #B05162;
+}
+#main-menu:hover #menu-arrow {
+    display: inline;
+}
+#main-menu:focus-within #menu-arrow {
+    display: inline;
 }
 #galleries:hover li {
     text-shadow: none;
@@ -123,8 +132,6 @@ nav a:hover, #main-menu>i {
   }
 #main-menu>ul {
     background-color: #D2C1C6;
-    position: relative;
-    top: 7.5rem;
 }
 #main-menu ul li {
     padding: 1rem 0;
@@ -258,7 +265,7 @@ and (orientation: portrait) {
         white-space: nowrap;
     }
     #hero-image {
-        top: 10vh;
+        top: 8vh;
     }
     #hero-text-container {
         width: 66%;
@@ -299,9 +306,9 @@ and (orientation: portrait) {
         display: flex;
         flex-direction: row-reverse;
         height: calc(100vh - 14rem);
-        align-content: center;
+        align-items: center;
     }
-    main>div>* {
+    main>div>div {
         box-shadow: 0 0 0.3rem #585563;
     }
     #hero-image {
@@ -324,10 +331,75 @@ and (orientation: portrait) {
         height: 4rem;
     }
 }
+/* galaxy fold */
 @media screen and (orientation: landscape)
 and (max-height: 295px) {
     footer, footer ul {
         z-index: -1;
     }
 }
-
+@media screen and (orientation: landscape)
+and (min-height: 450px) {
+    #hero-text-container {
+        max-height: 27.6rem;
+        align-self: flex-end;
+        /* margin-bottom: 5vh; */
+        background-color: #D2C1D6BB;
+        width: 35%;
+    }
+    #hero-image {
+        border-radius: 3rem;
+        width: 50%;
+    }
+    main>div {
+        background-image: url(../images/sunset.jpg),  linear-gradient(#E4DAE788, #E4DAE788);
+        background-repeat: no-repeat;
+        background-blend-mode: lighten;
+        position: relative;
+        z-index: -1;
+        background-size: 192rem 107.9rem;
+        background-position: -5rem -20rem;
+        justify-content: space-around;
+        padding: 5rem;
+    }
+}
+/* tablets */
+@media screen and (orientation: landscape)
+and (min-height: 590px) {
+    header {
+        height: 12rem;
+    }
+    #title-container {
+        font-size: 2rem;
+    }
+    #header-image {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 3.5rem;
+    }
+    #main-menu {
+        font-size: 5rem;
+        bottom: 1rem;
+        left: 3rem;
+    }
+    #main-menu * {
+        font-size: 6rem;
+    }
+    #sub-menu {
+        left: 18rem;
+    }
+    #main-menu ul {
+        width: 36rem;
+        padding-left: 4rem;
+    }
+    main>div:first-of-type {
+        height: calc(100vh - 20rem);
+    }
+    footer, footer ul {
+        height: 8rem;
+        font-size: 2rem;
+    }
+    footer ul {
+        font-size: 5rem;
+    }
+}
