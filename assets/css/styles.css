@@ -44,6 +44,7 @@ h1 {
 h2 {
     font-family: "Dancing Script", Trebuchet MS, cursive, sans-serif;
     letter-spacing: 0.26em;
+    font-size: 1.5em;
     color: #49736B;
 }
 #header-image {
@@ -286,6 +287,10 @@ and (orientation: portrait) {
     html {
         font-size: 50%;
     }
+    header {
+        padding-left: max(calc(25vw - 21rem), 2rem);
+        padding-right: max(calc(25vw - 21rem), 2rem);
+    }
     #title-container {
         width: 100%;
         font-size: 1.3rem;
@@ -340,6 +345,15 @@ and (max-height: 295px) {
 }
 @media screen and (orientation: landscape)
 and (min-height: 450px) {
+    header {
+        height: 10rem;
+    }
+    h1 {
+        font-size: 3.8rem;
+    }
+    h2 {
+        font-size: 3.4rem; 
+    }
     #hero-text-container {
         max-height: 27.6rem;
         align-self: flex-end;
@@ -372,6 +386,10 @@ and (min-height: 590px) {
     #title-container {
         font-size: 2rem;
     }
+    nav i:first-of-type {
+        position: relative;
+        left: -2rem;
+    }
     #header-image {
         height: 10rem;
         width: 10rem;
@@ -394,6 +412,9 @@ and (min-height: 590px) {
     }
     main>div:first-of-type {
         height: calc(100vh - 20rem);
+    }
+    #hero-text-container {
+        margin-bottom: calc(29.5vh - 20rem);
     }
     footer, footer ul {
         height: 8rem;
