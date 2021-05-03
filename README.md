@@ -53,7 +53,7 @@ With photographic images featuring as a really important aspect of the site, I  
 A neutral color scheme created using [coolors.co](https://coolors.co)
 ![Colour Scheme](/assets/images/readme-content/scheme-a.png)
 ![Colours Applied](/assets/images/readme-content/mob-col-1.png)
-
+***
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
@@ -72,11 +72,15 @@ In this section, you should go over the different parts of your project, and des
 3. The home page has a large image showing animal photography
 >*"As a first time visitor...**I want to know what this site is about**"*
 >*"As a returning visitor...**I really do like the photographs**"*
-- *the hero image shows of the sort of photography included in the website*
+- *the hero image shows off the type of photography included in the website*
 
 4. The footer element has accessible icons which link to social media platforms
 >*"As a returning visitor...**some social media links**"*
 - *the social media links will be available on all pages*
+***
+The footer element contains a link to my github and linked in profiles
+>BONUS
+- *the design of the footer allows for discrete links to me, should any visitor wish to know more*
 
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
@@ -84,7 +88,7 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 - Another feature idea
-
+***
 ## Technologies Used
 
 <!-- In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
@@ -119,12 +123,14 @@ If this section grows too long, you may want to split it off into a separate fil
 1. The h2 element, "wildlife photography" is visible over the "main-hero" div. This appears to only present a problem with small phones screens such as the iphone 4.  I have added a background colour with some opacity as a simple work-around for now.  I do not feel the bug will effect a large audience and is of a minor nature
 
 *style.css line - 219*
-
+~~~
     opacity: 0.75;
     background-color: #E4DAE7;
     border-radius: 0.8rem;
-
+~~~
 *I believe I could move the h2 element into the main section, rather than the header. This would allow it to flow with the content, but will require some repositioning of items*
+
+2. The entire title-container div acts as the anchor for the home page. This could lead to a user performing an accidental click on this anchor instead of the nav menu. This issue should be addressed, likely by moving the anchor element to parent only the h1 element.  I could have a second anchor on the h2 but do not feel that is necessary.  Some CSS will need to be checked and changed at the same time
 ## Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).

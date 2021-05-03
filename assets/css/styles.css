@@ -424,3 +424,7 @@ and (min-height: 590px) {
         font-size: 5rem;
     }
 }
+/* desktop/laptop (and ipad pro? and kindle fire?) */
+@media screen and (min-width: 1200px) {
+
+}
