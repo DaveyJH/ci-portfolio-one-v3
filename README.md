@@ -149,7 +149,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 - The main structure for the nav-menu is based on some tips from [CSS Tricks](https://css-tricks.com/solved-with-css-dropdown-menus/)
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos being used in the site are currently from [Unsplash](https://unsplash.com) but will be updated with photographs from Katie's albums as soon as she has chosen them
 
 ### Acknowledgements
 

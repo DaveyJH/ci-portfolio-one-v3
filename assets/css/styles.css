@@ -443,27 +443,65 @@ and (min-height: 590px) {
     }
 }
 /* desktop/laptop (and ipad pro? and kindle fire?) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px)
+and (min-height: 800px) {
     .mobiles-tablets {
         visibility: hidden;
         display: none;
     }
     .desktop {
+        z-index: -1;
         visibility: visible;
         display: initial;
         position: absolute;
         top: 15rem;
         width: 100%;
+        height: calc(100vh - 26rem);
         background-image: url(../images/sunset.jpg),  linear-gradient(#E4DAE788, #E4DAE788);
         background-repeat: no-repeat;
         background-blend-mode: lighten;
+        padding: 8rem 0;
     }
     div[class$="-line"] {
         /* background-color: red; */
         display: flex;
-        height: calc(50vh - 12rem);
+        height: 50%;
         justify-content: space-around;
         align-items: center;
+        max-width: 1450px;
+        margin: 0 auto;
     }
-
+    div.top-line {
+        margin-top: 3rem;
+    }
+    .bottom-line {
+        width: min(66%, 960px);
+        position: relative;
+        top: -6rem;
+        margin: 0 auto;
+    }
+    .desktop .image {
+        height: 50rem;
+        width: 50rem;
+        position: relative;
+        /* border-radius: 3rem; */
+    }
+    .desktop .image img {
+        border-radius: 3rem;;
+        height: 100%;
+        box-shadow:#58556388 -2rem -2rem;
+    }
+    #hero-text-container {
+        background-color: #DED5E0DD;
+        position: absolute;
+        top: 72%;
+        left: 32.5%;
+        z-index: 10;
+    }
+    #hero-text-container p:first-of-type {
+        font-size: 4.8rem;
+    }
+    #hero-text-container p:last-of-type {
+        font-size: 3rem;
+    }
 }
