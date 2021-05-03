@@ -18,7 +18,10 @@ body {
     font-family: "Work Sans", sans-serif;
     background-color: #E4DAE7;
 }
-
+.desktop {
+    visibility: hidden;
+    display: none;
+}
 /* header */
 header {
     height: 8rem;
@@ -314,14 +317,14 @@ and (orientation: portrait) {
         margin-right: 3rem;
     }
     /* flexbox for content */
-    main>div {
+    main>div.mobiles-tablets {
         margin-top: 3rem;
         display: flex;
         flex-direction: row-reverse;
         height: calc(100vh - 14rem);
         align-items: center;
     }
-    main>div>div {
+    main>div.mobiles-tablets>div {
         box-shadow: 0 0 0.3rem #585563;
     }
     #hero-image-container {
@@ -380,7 +383,7 @@ and (min-height: 450px) {
     #hero-image {
         top: -11vw;
     }
-    main>div {
+    main>div.mobiles-tablets {
         background-image: url(../images/sunset.jpg),  linear-gradient(#E4DAE788, #E4DAE788);
         background-repeat: no-repeat;
         background-blend-mode: lighten;
@@ -425,7 +428,7 @@ and (min-height: 590px) {
         width: 36rem;
         padding-left: 4rem;
     }
-    main>div:first-of-type {
+    main>div.mobiles-tablets {
         height: calc(100vh - 20rem);
     }
     #hero-text-container {
@@ -441,5 +444,26 @@ and (min-height: 590px) {
 }
 /* desktop/laptop (and ipad pro? and kindle fire?) */
 @media screen and (min-width: 1200px) {
+    .mobiles-tablets {
+        visibility: hidden;
+        display: none;
+    }
+    .desktop {
+        visibility: visible;
+        display: initial;
+        position: absolute;
+        top: 15rem;
+        width: 100%;
+        background-image: url(../images/sunset.jpg),  linear-gradient(#E4DAE788, #E4DAE788);
+        background-repeat: no-repeat;
+        background-blend-mode: lighten;
+    }
+    div[class$="-line"] {
+        /* background-color: red; */
+        display: flex;
+        height: calc(50vh - 12rem);
+        justify-content: space-around;
+        align-items: center;
+    }
 
 }
