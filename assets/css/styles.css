@@ -18,6 +18,7 @@ body {
     font-family: "Work Sans", sans-serif;
     background-color: #E4DAE7;
 }
+/* hide desktop style */
 .desktop {
     visibility: hidden;
     display: none;
@@ -98,16 +99,18 @@ nav>ul>li:focus-within *:not(#sub-menu) {
     display: block;
 }
 /* apply shadow to hovered item */
-#main-menu ul a>li:hover, #galleries:hover {
+#main-menu ul>  li:hover, #galleries:hover {
     text-shadow: 0.2rem 0.2rem 0.3rem #B05162;
 }
-#main-menu:hover #menu-arrow {
-    display: inline;
+/* apply shadow to focused item */
+#main-menu ul>  li:focus-within, #galleries:focus-within {
+    text-shadow: 0.2rem 0.2rem 0.3rem #B05162;
 }
-#main-menu:focus-within #menu-arrow {
-    display: inline;
-}
+/* remove shadow from sub menu if galleries is hovered/focused */
 #galleries:hover li {
+    text-shadow: none;
+}
+#galleries:focus-within li {
     text-shadow: none;
 }
 /* nav sub menu appears when hovered */
@@ -124,7 +127,7 @@ nav>ul>li:focus-within *:not(#sub-menu) {
     left: 6rem;
     background-color: #DED5E0;
 }
-#sub-menu>a:last-of-type {
+#sub-menu>li:last-of-type {
     padding-bottom: 2rem;
 }
 #main-menu ul {
@@ -133,7 +136,7 @@ nav>ul>li:focus-within *:not(#sub-menu) {
     padding: 0 2rem;
     border-radius: 0.8rem;
     box-shadow: 0.2rem 0.2rem 0.4rem #585563, 0 0 0.3rem #585563; 
-  }
+}
 #main-menu>ul {
     background-color: #D2C1C6;
 }
@@ -161,7 +164,7 @@ nav>ul>li:focus-within *:not(#sub-menu) {
     position: absolute;
     top: calc(50% - 75vw);
 }
-#hero-text-container {
+.hero-text-container {
     background-color:#D2C1D688;
     font-size: 4rem;
     text-align: center;
@@ -174,12 +177,12 @@ nav>ul>li:focus-within *:not(#sub-menu) {
     text-shadow: 0.2rem 0.2rem 0.3rem #D2C1C6, -0.2rem -0.2rem 0.3rem #D2C1C6;
     z-index: -1;
 }
-#hero-text-container p:first-of-type {
+.hero-text-container p:first-of-type {
     font-family: "caveat", cursive, sans-serif;
     font-weight: 700;
     padding-bottom: 1.5rem;
 }
-#hero-text-container p:last-of-type {
+.hero-text-container p:last-of-type {
     font-family: "Dancing Script", Trebuchet MS, cursive, sans-serif;
     text-transform: capitalize;
     font-size: 2.5rem;
@@ -251,7 +254,7 @@ footer div {
     #sub-menu {
         left: 1.5rem;
     }
-    #hero-text-container {
+    .hero-text-container {
         top: -9rem;
     }
 }
@@ -265,8 +268,8 @@ and (orientation: portrait) {
         width: 100%;
         font-size: 1.5rem;
         padding: 0 3rem;
-    }
-    #title-container a {
+    /* }
+    #title-container a { */
         display: flex;
         align-items: center;
         flex-grow: 1;
@@ -279,7 +282,7 @@ and (orientation: portrait) {
     #hero-image-container {
         top: 8vh;
     }
-    #hero-text-container {
+    .hero-text-container {
         width: 66%;
     }
     footer, footer ul {
@@ -306,8 +309,8 @@ and (orientation: portrait) {
         width: 100%;
         font-size: 1.3rem;
         padding: 0 3rem;
-    }
-    #title-container a {
+    /* }
+    #title-container a { */
         display: flex;
         align-items: center;
         flex-grow: 1;
@@ -337,7 +340,7 @@ and (orientation: portrait) {
     #hero-image {
         top: -15vw;
     }
-    #hero-text-container {
+    .hero-text-container {
         width: 30%;
         padding: 2.2rem;
         font-size: 3.3rem;
@@ -369,7 +372,7 @@ and (min-height: 450px) {
     h2 {
         font-size: 3.4rem; 
     }
-    #hero-text-container {
+    .hero-text-container {
         max-height: 27.6rem;
         align-self: flex-end;
         /* margin-bottom: 5vh; */
@@ -428,10 +431,16 @@ and (min-height: 590px) {
         width: 36rem;
         padding-left: 4rem;
     }
+    #main-menu ul li {
+        padding: 3rem 0;
+    }
+    #sub-menu li:last-of-type {
+        padding-bottom: 4rem;
+    }
     main>div.mobiles-tablets {
         height: calc(100vh - 20rem);
     }
-    #hero-text-container {
+    .hero-text-container {
         margin-bottom: calc(29.5vh - 20rem);
     }
     footer, footer ul {
@@ -491,17 +500,17 @@ and (min-height: 800px) {
         height: 100%;
         box-shadow:#58556388 -2rem -2rem;
     }
-    #hero-text-container {
+    .hero-text-container {
         background-color: #DED5E0DD;
         position: absolute;
         top: 72%;
         left: 32.5%;
         z-index: 10;
     }
-    #hero-text-container p:first-of-type {
+    .hero-text-container p:first-of-type {
         font-size: 4.8rem;
     }
-    #hero-text-container p:last-of-type {
+    .hero-text-container p:last-of-type {
         font-size: 3rem;
     }
 }
