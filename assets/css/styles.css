@@ -54,7 +54,7 @@ h2 {
 #header-image {
     height: 5rem;
     width: 5rem;
-    background: url(../images/hamster.jpg) no-repeat center center;
+    background: url(../images/hamster-400.jpg) no-repeat center center;
     background-size: 250%;
     float: right;
     border: 0.5rem solid #DB8784;
@@ -163,6 +163,15 @@ nav>ul>li:focus-within *:not(#sub-menu) {
     height: auto;
     position: absolute;
     top: calc(50% - 75vw);
+    animation: initial-grow 2s 0.5s both;
+}
+@keyframes initial-grow {
+    from {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 .hero-text-container {
     background-color:#D2C1D688;
@@ -176,6 +185,15 @@ nav>ul>li:focus-within *:not(#sub-menu) {
     color: #9B4655;
     text-shadow: 0.2rem 0.2rem 0.3rem #D2C1C6, -0.2rem -0.2rem 0.3rem #D2C1C6;
     z-index: -1;
+    animation: text-show 1s 2.2s both;
+}
+@keyframes text-show {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 .hero-text-container p:first-of-type {
     font-family: "caveat", cursive, sans-serif;
@@ -480,14 +498,18 @@ and (min-height: 800px) {
         max-width: 1450px;
         margin: 0 auto;
     }
-    div.top-line {
-        margin-top: 3rem;
+    .top-line {
+        animation: top-line-show 2.2s both;
+        position: relative;
+        top: 5rem;
     }
     .bottom-line {
         width: min(66%, 960px);
         position: relative;
-        top: -6rem;
+        margin-top: -6rem;
         margin: 0 auto;
+        animation: bottom-line-show 2.2s 0.75s both;
+        top: -3rem;
     }
     .desktop .image {
         height: 50rem;
@@ -503,7 +525,7 @@ and (min-height: 800px) {
     .hero-text-container {
         background-color: #DED5E0DD;
         position: absolute;
-        top: 72%;
+        top: 75%;
         left: 32.5%;
         z-index: 10;
     }
@@ -512,5 +534,25 @@ and (min-height: 800px) {
     }
     .hero-text-container p:last-of-type {
         font-size: 3rem;
+    }
+    @keyframes top-line-show {
+        from {
+            transform: scale(0);
+            top: -300%;
+        }
+        to {
+            transform: scale(1);
+            top: 5rem;
+        }
+    }
+    @keyframes bottom-line-show {
+        from {
+            transform: scale(0);
+            top: -300%;
+        }
+        to {
+            transform: scale(1);
+            top: -3rem;
+        }
     }
 }
