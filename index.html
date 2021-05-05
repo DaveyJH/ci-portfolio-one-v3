@@ -12,43 +12,36 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li id="main-menu">
-                    <i class="fas fa-bars" tabindex="0" id="nav-show"></i>
-                    <ul>
-                        <!-- <a href="./index.html"> -->
-                            <li><a href="./index.html">home</a></li>
-                        <!-- </a> -->
-                            <li id="galleries" aria-haspopup="true">
-                                <a href="#">galleries &#8628;</a>
-                                <ul id="sub-menu">
-                                    <li><a href="#">gallery one
-                                        
-                                    </a></li>
-                                    <li><a href="#">
-                                        gallery two
-                                    </a></li>
-                                    <li><a href="#">
-                                        gallery tre
-                                    </a></li>
-                                </ul>
-                            </li>
-                        <li><a href="#">
-                           about me
-                        </a></li>
+            <!-- aria labelling still not correct. screen reader does not read out items as navigation links? -->
+            <ul role="menu" aria-label="navigation">
+                <li role="menuitem" id="main-menu">
+                    <i class="fas fa-bars" tabindex="0" id="nav-show" role="none"></i>
+                    <ul role="menu" aria-haspopup="true" aria-expanded="false" aria-label="navigation">
+                        <li role="none"><a href="./index.html" role="menuitem navigation">home</a>
+                        </li>
+                        <li id="galleries" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-label="galleries">
+                            galleries &#8628;
+                            <ul id="sub-menu" role="menu" aria-label="galleries" tab-index="0">
+                                <li role="none"><a href="#" role="menuitem navigation">gallery one</a>
+                                </li>
+                                <li role="none"><a href="#" role="menuitem navigation">gallery two</a>
+                                </li>
+                                <li role="none"><a href="#" role="menuitem navigation">gallery tre</a>
+                                </li>
+                            </ul>  
+                        </li>
+                        <li role="none"><a href="#" role="menuitem navigation">about me</a>
+                        </li>
                         <!-- blog will go here -->
-                        <li><a href="#">
-                           contact
-                        </a></li>
+                        <li role="none"><a href="#" role="menuitem navigation">contact</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </nav>
         <div id="title-container">
-            
-                <h1><a href="./index.html">katie horrocks</a></h1>
-                <h2>wildlife photography</h2>
-         
+            <h1><a href="./index.html">katie horrocks</a></h1>
+            <h2>wildlife photography</h2>
         </div>
         <div id="header-image"></div>
     </header>
@@ -67,26 +60,26 @@
             <div class="top-line">
                 <div class="container">
                     <div class="image">
-                        <img src="./assets/images/bird.jpg" alt="an inquisitive little bird">
+                        <img src="./assets/images/bird-600.jpg" alt="an inquisitive little bird">
                     </div>
                 </div>
                 <div class="container">
                     <div class="image">
-                        <img src="./assets/images/reptile.jpg" alt="a stern looking iguana">
+                        <img src="./assets/images/reptile-600.jpg" alt="a stern looking iguana">
                     </div>
                 </div>
                 <div class="container">
                     <div class="image">
-                        <img src="./assets/images/eagle.jpg" alt="a soaring eagle">
+                        <img src="./assets/images/eagle-600.jpg" alt="a soaring eagle">
                     </div>
                 </div>
             </div>
             <div class="bottom-line">
                     <div class="image">
-                        <img src="./assets/images/rabbit.jpg" alt="a playful rabbit">
+                        <img src="./assets/images/panda-600.jpg" alt="a panda eating schutes">
                     </div>
                     <div class="image">
-                        <img src="./assets/images/lion-w-cub.jpg" alt="lion with other big cat's cub">
+                        <img src="./assets/images/lion-w-cub-600.jpg" alt="lion with other big cat's cub">
                     </div>
             </div>
             <div class="hero-text-container">
@@ -122,15 +115,14 @@
     </p> -->
     <footer>
         <ul>
-            <li><a href="https://twitter.com/Katiezoophotog1" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://facebook.com/khanimals" rel="noopener" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://instagram.com/kh_zoo_photography/" rel="noopener" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/Katiezoophotog1" aria-label="Katie Horrocks on twitter" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://facebook.com/khanimals" aria-label="Katie Horrocks on facebook" rel="noopener" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://instagram.com/kh_zoo_photography/" aria-label="Katie Horrocks on instagram" rel="noopener" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
         <div>
-            <i class="far fa-copyright"></i>
-            DaveyJH
-            <a href="https://linkedin.com/in/davejhorrocks" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-            <a href="https://https://github.com/daveyjh" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <i class="far fa-copyright"></i>DaveyJH
+            <a href="https://linkedin.com/in/davejhorrocks" target="_blank" rel="noopener author" aria-label="Dave J H, author's linked in profile"><i class="fab fa-linkedin"></i></a>
+            <a href="https://https://github.com/daveyjh" target="_blank" rel="noopener author" aria-label="Dave J H, author's github profile"><i class="fab fa-github"></i></a>
         </div>
     </footer>
     <!-- font awesome -->
