@@ -1,4 +1,7 @@
 # Portfolio Project 1 - HTML/CSS Essentials
+
+Another incompleted project. For the purpose of my course, this site was too time consuming with the layout and menu structure. As my knowledge of other languages is increasing, I have realised there are many other ways to achieve my original concept and so this project will remain here as is. It has some far better aspects than previous incompleted projects, but the ARIA of the site was too difficult to correct with my, at the time, limited knowledge.  A real case of biting off more than I could chew!
+
 ## Table of Contents
 - [Objective](#Objective)
 - [Brief](#Brief)
